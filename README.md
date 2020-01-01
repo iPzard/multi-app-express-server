@@ -8,4 +8,4 @@ Clone the project and run `npm install`. Add your sites to the domain folder the
 Tests have been configured to test if the domains configred in `./config/domains.js` match the domain directory structure of your project. To run tests, use `npm run test`. 
 
 # Launch
-To launch the server, use `npm start`.
+To launch the server, use `npm start` and navigate to `your subdomain here`.localhost:8080 in your browser.
