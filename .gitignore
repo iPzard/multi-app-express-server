@@ -1,0 +1,4 @@
+node_modules/
+backup/
+domains/*
+package-lock.json

@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "author": "Daniel Wade",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "~4.16.0",
+    "vhost": "^3.0.2"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
