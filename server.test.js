@@ -8,6 +8,6 @@ describe('Configuration', ()=> {
     });
 
     it('should have valid template engine strings', ()=> {
-        for(let domain in subDomains) expect(subDomains[domain].template).toMatch(/html|ejs/);
+        for(let domain in subDomains) expect(subDomains[domain].template).toMatch(/html|ejs|app/);
     });
 });
