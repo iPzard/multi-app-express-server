@@ -1,4 +1,10 @@
 const subDomains = {
+    
+    chatlocker: {
+        directory: './domains/chatlocker',
+        template: 'app'
+    },
+
     danielwade: {
         directory: './domains/daniel-wade',
         template: 'ejs'
