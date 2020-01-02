@@ -6,7 +6,7 @@ const vhost          = require('vhost');
 // Function to set subdomain
 const setDomain = domain => {
     const { [domain]: { directory, template } } = subDomains;
-    const app = (() => template === 'app' ? require(`${directory}/server`).app : express())();
+    const app = template === 'app' ? require(`${directory}/server`).app : express();
     setEngine(app, directory, template);
     return app;
 };
