@@ -8,6 +8,7 @@ const setEngine = (app, directory, template) => {
 
         // For static sites using HTML 
         case 'html':
+            
             // Default index and 404 page
             app.use(express.static(path.join(directory)));
             app.use((req, res)=> res.sendFile(path.join(directory, '404.html'), { root: './' }));

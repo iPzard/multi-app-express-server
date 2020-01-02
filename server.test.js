@@ -1,13 +1,21 @@
-const { subDomains } = require('./config/domains');
+const { setEngine }  = require('./config/engines');
+const { domains }    = require('./config/domains');
+
 const fs = require("fs");
 
-describe('Configuration', ()=> {
+describe('Server Configuration', ()=> {
 
-    it('should have accurate directories for subdomains', () => {
-        for(let domain in subDomains) expect(fs.existsSync(subDomains[domain].directory));
+    // domains
+    it('domains.js should have accurate directories for domains', () => {
+        for(let domain in domains) expect(fs.existsSync(domains[domain].directory));
     });
 
-    it('should have valid template engine strings', ()=> {
-        for(let domain in subDomains) expect(subDomains[domain].template).toMatch(/html|ejs|app/);
+    it('domains.js should have valid template engine strings', ()=> {
+        for(let domain in domains) expect(domains[domain].template).toMatch(/html|ejs|app/);
+    });
+
+    // setEngine
+    it('setEngine() should accept 3 arguments', () => {
+        expect(setEngine.length).toBe(3);
     });
 });

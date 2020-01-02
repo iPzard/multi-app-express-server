@@ -1,4 +1,4 @@
-const subDomains = {
+const domains = {
     
     chatlocker: {
         directory: './domains/chatlocker',
@@ -9,6 +9,11 @@ const subDomains = {
         directory: './domains/daniel-wade',
         template: 'ejs'
     }, 
+
+    main: {
+        directory: './domains/main',
+        template: 'html'
+    },
 
     projects: {
         directory: './domains/projects',
@@ -26,4 +31,4 @@ const subDomains = {
     }
 };
 
-module.exports = { subDomains };
+module.exports = { domains };
