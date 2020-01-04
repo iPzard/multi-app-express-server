@@ -14,7 +14,7 @@ const setDomain = domain => {
 // Configure express to handle domains
 express()
 
-    // Subdomains
+    // Domains
     .use(vhost(/chatlocker.(.*)/,  setDomain('chatlocker')))
     .use(vhost(/daniel-wade.(.*)/, setDomain('danielwade')))
     .use(vhost(/projects.(.*)/,    setDomain('projects')))

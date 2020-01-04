@@ -1,5 +1,5 @@
-# Subdomain Express server
-Subdomain Express server for multi-app projects.
+# Multi-Domain Express server
+Multi-domain and multi-subdomain Express server to host multiple apps and/or sites under a single server. 
 
 # Setup
 Clone the project and run `npm install`. Add your sites to the domain folder then update `./config/domains.js` to match your project structure. The `server.js` file utilizes vhost to allow for multiple subdomains, reconfigure these to match your domains. Regex is used instead of hardcoding the domain to allow for developing and testing on `localhost`.

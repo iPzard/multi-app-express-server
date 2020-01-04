@@ -1,5 +1,5 @@
 const domains = {
-    
+
     chatlocker: {
         directory: './domains/chatlocker',
         template: 'app'
