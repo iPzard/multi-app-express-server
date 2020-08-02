@@ -1,5 +1,5 @@
 # Multi-app Express server
-Multi-app and multi-domain Express server to host multiple apps, and/or sites, while supporting a variety of combined technologies, under a single server. This means you can have a React app, Angular app, and Python/Flask app all operating at the same time, using only one port. 
+Host multiple apps, and/or sites, while supporting a variety of combined technologies, under a single server and port. For example, you can have a React app, Angular app, and Python/Flask app all operating at the same time, using only one port. 
 
 ## ⚙️ Config
 1. Cloning the repository and add your site and/or app folders into the `domain` folder.
