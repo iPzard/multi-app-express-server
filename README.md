@@ -35,3 +35,8 @@ npm run build:docs
 ```bash
 npm run test
 ```
+
+# 🐱‍💻 Docs
+Code documentation, created with [JSDoc](https://github.com/jsdoc/jsdoc), can be found here:<br>
+[Code Documentation](https://ipzard.github.io/multi-app-express-server/)
+<br><br>
