@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>config/engines.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/daybrush.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="config/engines.js - Documentation"/>
+
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><div class="search"><div class="input-area"><input type="text"/></div><button></button></div><ul class="global"><li file="global"  class="parent"><a href="global.html">Global</a><h4><a href="global.html#methods">Methods</a></h4><ul class='methods'><li data-type='method'><a href="global.html#setDomain">setDomain</a></li><li data-type='method'><a href="global.html#setEngine">setEngine</a></li></ul><h4><a href="global.html#members">Members</a></h4><ul class='members'><li data-type='member'><a href="global.html#domains">domains</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">config/engines.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const express = require('express');
+const path    = require('path');
+
+/**
+ * @description - Helper function to set the app engine
+ * @param {Object} app - `express()` app object passed from server or app, depending on template.
+ * @param {string} directory - Directory location of app.
+ * @param {string} template - Type of app you're using.
+ * @see `/config/domains.js` for more information.
+ */
+const setEngine = (app, directory, template) => {
+
+    switch(template) {
+
+        // For static sites using HTML 
+        case 'html':
+            
+            // Default index and 404 page
+            app.use(express.static(path.join(directory)));
+            app.use((req, res)=> res.sendFile(path.join(directory, '404.html'), { root: './' }));
+            break;
+
+        // For sites using EJS template engine
+        case 'ejs':
+            app.set('view engine', 'ejs');
+            app.set('views', path.join(directory, 'views'));
+            app.use(express.static(path.join(directory, 'static')));
+
+            // Default index and 404 page
+            app.get('/', (req, res) => res.render('index'));
+            app.use((req, res)=> res.render('404'));
+            break;
+
+        // For independent apps with their own server
+        case 'app':
+            return app;
+
+        default:
+            console.error('No template set for domain.');
+    }
+
+};
+
+module.exports = { setEngine }; </code></pre>
+        </article>
+    </section>
+
+
+
+
+
+<style>
+
+
+nav li[file="config/engines"]:after {
+    display: none;
+}
+nav li[file="config/engines"] h4, nav li[file="config/engines"] ul {
+    display: block;
+}
+</style>
+
+</div>
+
+<br class="clear">
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/utils.min.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/custom.js"></script>
+</body>
+</html>

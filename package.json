@@ -3,12 +3,14 @@
   "author": "Daniel Wade",
   "version": "0.0.0",
   "scripts": {
+    "build:docs": "jsdoc -c jsdoc.json",
     "start": "node server",
     "test": "jest"
   },
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "~4.16.0",
+    "jsdoc": "^3.6.5",
     "vhost": "^3.0.2"
   },
   "devDependencies": {

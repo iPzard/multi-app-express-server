@@ -1,7 +1,13 @@
 const express = require('express');
 const path    = require('path');
 
-// Helper function to set template engines
+/**
+ * @description - Helper function to set the app engine
+ * @param {Object} app - `express()` app object passed from server or app, depending on template.
+ * @param {string} directory - Directory location of app.
+ * @param {string} template - Type of app you're using.
+ * @see `/config/domains.js` for more information.
+ */
 const setEngine = (app, directory, template) => {
 
     switch(template) {

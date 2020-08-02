@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link type="text/css" rel="stylesheet" href="styles/daybrush.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="Home - Documentation"/>
+
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><div class="search"><div class="input-area"><input type="text"/></div><button></button></div><ul class="global"><li file="global"  class="parent"><a href="global.html">Global</a><h4><a href="global.html#methods">Methods</a></h4><ul class='methods'><li data-type='method'><a href="global.html#setDomain">setDomain</a></li><li data-type='method'><a href="global.html#setEngine">setEngine</a></li></ul><h4><a href="global.html#members">Members</a></h4><ul class='members'><li data-type='member'><a href="global.html#domains">domains</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>Multi-app Express server</h1>
+<p>Multi-app and multi-domain Express server to host multiple apps, and/or sites, while supporting a varieties of combined technologies, under a single server. This means you can have a React app, Angular app, and Python/Flask app all operating at the same time, using only one port.</p>
+<h2>⚙️ Config</h2>
+<p>After cloning the repository, add your sites to the domain folder, then update <code>./config/domains.js</code> to match your project structure. The <code>server.js</code> file utilizes <code>vhost</code> to allow multiple domains. You can reconfigure the examples to match your project needs, regex is used instead of string for the domain, allowing access for developing and testing on <code>localhost</code>.<br><br></p>
+<p>If your app or apps have their own express server, you can export the app, instead of listening to a port in the server file. Set its template property to <code>&quot;app&quot;</code> in <code>./config/domains.js</code>. The <code>setEngine()</code> function will expect your server file to be named <code>server.js</code> at the root of your projects folder in <code>domains</code>. For example, if your app was named <code>foo</code>, your <code>server.js</code> file should be found in the following path <code>./domains/foo/server.js</code>.<br><br></p>
+<p>Once the server has been started, your app can be found at, <code>&lt;your-domain&gt;.localhost:8080</code> in your browser.</p>
+<h2>📜 Scripts</h2>
+<p>Use the following scripts to install dependencies, start your server, and run tests.</p>
+<p><strong>Install Dependencies:</strong></p>
+<pre class="prettyprint source lang-bash"><code>npm install
+</code></pre>
+<p><strong>Start Server:</strong></p>
+<pre class="prettyprint source lang-bash"><code>npm start
+</code></pre>
+<p><strong>Update Documentation:</strong></p>
+<pre class="prettyprint source lang-bash"><code>npm run build:docs
+</code></pre>
+<p><strong>Run Tests:</strong></p>
+<pre class="prettyprint source lang-bash"><code>npm run test
+</code></pre></article>
+    </section>
+
+
+
+
+
+
+
+<style>
+
+nav>.search+ul li:first-child:after {
+    display: none;
+}
+nav>.search+ul li:first-child h4, nav>.search+ul li:first-child ul {
+    display: block;
+}
+
+
+nav li[file="home"]:after {
+    display: none;
+}
+nav li[file="home"] h4, nav li[file="home"] ul {
+    display: block;
+}
+</style>
+
+</div>
+
+<br class="clear">
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/utils.min.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/custom.js"></script>
+</body>
+</html>
