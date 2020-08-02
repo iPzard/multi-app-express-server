@@ -2,7 +2,7 @@
 Multi-app and multi-domain Express server to host multiple apps, and/or sites, while supporting a varieties of combined technologies, under a single server. This means you can have a React app, Angular app, and Python/Flask app all operating at the same time, using only one port. 
 
 ## ⚙️ Config
-1. After cloning the repository, add your sites to the domain folder, following the structure of the examples provided in the file.
+1. Cloning the repository and add your site and/or app folders into the `domain` folder.
 
 2. Update `./config/domains.js` to match your project structure, and remove the example data.
 
