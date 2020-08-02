@@ -42,7 +42,7 @@ npm run test
 ## 📚 Docs
 Code documentation, created with [JSDoc](https://github.com/jsdoc/jsdoc), can be found here:<br>
 [Multi-app Express Server](https://ipzard.github.io/multi-app-express-server/)
-<br>
+<br><br>
 
 ## 🏷️ License
 MIT © [iPzard](https://github.com/iPzard/multi-app-express-server/blob/master/LICENSE.md)
