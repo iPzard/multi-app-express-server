@@ -13,6 +13,7 @@ Host multiple apps, and/or sites, while supporting a variety of combined technol
 * If your app or apps have their own express server, you can export the app, instead of listening to a port in the server file. Set its template property to `"app"` in `./config/domains.js`. The `setEngine()` function will expect your server file to be named `server.js` at the root of your projects folder in `domains`. For example, if your app was named `foo`, your `server.js` file should be found in the following path `./domains/foo/server.js`.
 
 * Once the server has been started, your app can be found at, `<your-domain>.localhost:8080` in your browser.
+
 <br>
 
 ## 📜 Scripts
@@ -38,6 +39,7 @@ npm run build:docs
 ```bash
 npm run test
 ```
+
 <br>
 
 ## 📚 Docs
