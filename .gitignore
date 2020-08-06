@@ -1,5 +1,6 @@
-node_modules/
+.vscode
 backup/
 domains/*
 !domains/.gitkeep 
+node_modules/
 package-lock.json
