@@ -39,14 +39,16 @@ npm run build:docs
 ```bash
 npm run test
 ```
-
 <br>
 
 ## 🐱‍👓 Docs
 Code documentation, created with [JSDoc](https://github.com/jsdoc/jsdoc), can be found here:<br>
-[Multi-app Express Server](https://ipzard.github.io/multi-app-express-server/)
+[Multi-app Express Server](https://ipzard.github.io/multi-app-express-server)
+<br><br>
 
-<br>
+## 🦟 Bugs
+Bugs reported on the project's [issues page](https://github.com/iPzard/multi-app-express-server/issues) will be exterminated as quickly as possible, be sure to include steps to reproduce so they can be spotted easily.
+<br><br>
 
 ## 🏷️ License
 MIT © [iPzard](https://github.com/iPzard/multi-app-express-server/blob/master/LICENSE.md)
