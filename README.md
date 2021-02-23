@@ -1,5 +1,9 @@
 # Multi-app Express server
-Host multiple apps, and/or sites, while supporting a variety of combined technologies, under a single server and port. For example, you can have a React app, Angular app, and Python/Flask app all operating at the same time, using only one port. 
+
+[![Build](https://img.shields.io/badge/build-passing-%23A95757?style=for-the-badge)](https://github.com/iPzard/multi-app-express-server#readme)
+[![License](https://img.shields.io/github/license/iPzard/multi-app-express-server?color=A95757&style=for-the-badge)](https://github.com/iPzard/multi-app-express-server/blob/master/LICENSE.md)
+
+> Host multiple apps, and/or sites, while supporting a variety of combined technologies, under a single server and port. For example, you can have a React app, Angular app, and Python/Flask app all operating at the same time, using only one port. 
 
 <br>
 
